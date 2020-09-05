@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+<meta charset="utf-8">
+<title>LALR项目集族可视化输出</title>
+	<style>
+        .total{
+            text-align: center;
+            width: auto;
+			height: auto;
+			background-color:antiquewhite;
+			float: left;
+        }
+		.label{
+			width: 240px;
+			height: 1000px;
+			padding: 10px;
+            text-align:center;
+			float: left;
+			
+		}
+		.title{
+			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			font-weight: 700;
+			font-size: 50px;
+		}
+	</style>
+</head>
+<div class="total">
+<p class="title">LALR(1)项目集族</p>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L0</th>
+<tr>
+<td>Z->·E</td><td># </td></tr>
+<tr>
+<td>E->·(L,E)</td><td># </td></tr>
+<tr>
+<td>E->·S</td><td># </td></tr>
+<tr>
+<td>S->·id</td><td># </td></tr>
+<tr>
+<td>S->·(S)</td><td># </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L1</th>
+<tr>
+<td>Z->E·</td><td># </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L2+9+17</th>
+<tr>
+<td>E->(·L,E)</td><td># ) , </td></tr>
+<tr>
+<td>S->(·S)</td><td># , ) </td></tr>
+<tr>
+<td>L->·L,E</td><td>, ) </td></tr>
+<tr>
+<td>L->·E</td><td>, ) </td></tr>
+<tr>
+<td>S->·id</td><td>) , </td></tr>
+<tr>
+<td>S->·(S)</td><td>) , </td></tr>
+<tr>
+<td>E->·(L,E)</td><td>, </td></tr>
+<tr>
+<td>E->·S</td><td>, </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L3+18</th>
+<tr>
+<td>E->S·</td><td># ) , </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L4+8</th>
+<tr>
+<td>S->i·d</td><td># ) , </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L5+15+22</th>
+<tr>
+<td>E->(L·,E)</td><td># , ) </td></tr>
+<tr>
+<td>L->L·,E</td><td>, </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L6+14</th>
+<tr>
+<td>S->(S·)</td><td># ) , </td></tr>
+<tr>
+<td>E->S·</td><td>, </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L7</th>
+<tr>
+<td>L->E·</td><td>, </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L10+13</th>
+<tr>
+<td>S->id·</td><td># ) , </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L11+20+24</th>
+<tr>
+<td>E->(L,·E)</td><td># , ) </td></tr>
+<tr>
+<td>L->L,·E</td><td>, </td></tr>
+<tr>
+<td>E->·(L,E)</td><td>) , </td></tr>
+<tr>
+<td>E->·S</td><td>) , </td></tr>
+<tr>
+<td>S->·id</td><td>) , </td></tr>
+<tr>
+<td>S->·(S)</td><td>) , </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L12+19</th>
+<tr>
+<td>S->(S)·</td><td># ) , </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L16+23+26</th>
+<tr>
+<td>E->(L,E·)</td><td># , ) </td></tr>
+<tr>
+<td>L->L,E·</td><td>, </td></tr>
+</table></div>
+<div class="label">
+		<table border="1" class="table table-striped table-dark">
+<th>L21+25+27</th>
+<tr>
+<td>E->(L,E)·</td><td># , ) </td></tr>
+</table></div>
+</table>
+</div>
+</div>
+	
+<body>
+</body>
+</html>
+
